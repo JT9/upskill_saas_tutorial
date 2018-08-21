@@ -55,6 +55,20 @@ h1, h2, h3 {
   }
 }
 
+//Changes the mobile hamburger menu background color
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+//Changes the mobile hamburger menu border, hover and focus
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus
+  {
+    background-color: #00c6ff;
+  }
+}
+
 
 //Used on the home page for main text under navbar
 .home-callout {
