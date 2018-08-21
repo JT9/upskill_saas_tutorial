@@ -29,32 +29,22 @@ h1, h2, h3 {
   background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 .navbar {
   //Removes border under navbar
   border: none;
 }
 
-//Changing default color of brand name
-.navbar-default .navbar-brand {
+//Changing default color of logo link
+.navbar-default .navbar-brand,
+//Changing default color of page links
+.navbar-default .navbar-nav > li > a
+{
   color: white;
-}
-
-//Changes hover default color of brand name
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-//Changing default color of navbar list items anchor
-.navbar-default .navbar-nav > li > a  {
-  color: white;
-}
-
-//Changes default color of hover of navbar list items anchor
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
+  //Changes hover default color for navbar
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
 
