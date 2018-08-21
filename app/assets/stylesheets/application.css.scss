@@ -36,6 +36,12 @@ h1, h2, h3 {
   border: none;
 }
 
+//Changes font and weight of logo in navbar
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
 //Changing default color of logo link
 .navbar-default .navbar-brand,
 //Changing default color of page links
