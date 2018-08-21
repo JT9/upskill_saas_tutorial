@@ -16,6 +16,8 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 //Using Google Fonts
 h1, h2, h3 {
@@ -41,7 +43,7 @@ h1, h2, h3 {
 {
   color: white;
   //Changes hover default color for navbar
-  &:hover {
+  &:hover { //Nested selector using Sass
     color: white;
     opacity: 0.75;
   }
