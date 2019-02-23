@@ -38,12 +38,14 @@
       </div>
     </nav>
     
-    <!-- Placed flash message here as you may redirect to another page -->
+    <!-- Placed flash message here as you may redirect to another page instead of in views->contacts->new.html.erb -->
     <div class="container">
       <!-- loop for |key, value| used for bootstrap alerts for success and danger-->
-      <% flash.each do |type, msg| %> <!-- This displays a message on the contact form for message sent or an error -->
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% flash.each do |type, msg| %> <!-- This displays a message on the contact form for message sent or an error in a loop-->
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %> <!-- equals sign injects into the document -->
+        <!-- <div class ="alert alert-type">msg</div> -->
       <% end %>
+      
     </div>
     <%= yield %>
 
