@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
-   def new
-     @contact = Contact.new
+   def new #Look for view file in views->contacts->new.html.erb
+     @contact = Contact.new #model file contact.rb
    end
    
    def create
