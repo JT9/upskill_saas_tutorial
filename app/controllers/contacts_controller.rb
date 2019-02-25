@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
    def create
      @contact = Contact.new(contact_params) #{name: 'asdf', email: 'asdf', comments: 'asdf'}
      if @contact.save
-       #lift information after it has been saved from contact form
+       #lift information after it has been saved from contact form to be stored in 3 variables
        name = params[:contact][:name]
        email = params[:contact][:email]
        body = params[:contact][:comments]
