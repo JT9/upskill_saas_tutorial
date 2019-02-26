@@ -69,11 +69,16 @@ h1, h2, h3 {
   }
 }
 
-
+//Home page styles
 //Used on the home page for main text under navbar
 .home-callout {
   color: white;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
+}
+
+//devise gem flash messages do not display for logging in and logging out
+.alert-notice {
+  display: none;
 }
